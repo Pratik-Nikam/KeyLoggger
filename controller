@@ -1,0 +1,12 @@
+from pynput.mouse import Controller
+
+#Control Mouse
+#Listening to Mouse
+#Keyboard control
+#Listen to keyboard strokes
+
+def control_mouse():
+    mouse = Controller()
+    mouse.position = (100,150)
+
+control_mouse()
