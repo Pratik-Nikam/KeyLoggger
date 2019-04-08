@@ -1,0 +1,8 @@
+from pynput.mouse import Listener
+
+def rec_position(x,y):
+    print("position of current mouse {0}".format({x,y}))
+
+
+with Listener(on_move = rec_position)as l:
+    l.join()
