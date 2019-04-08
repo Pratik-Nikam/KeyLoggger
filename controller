@@ -1,4 +1,5 @@
 from pynput.mouse import Controller
+from pynput.keyboard import Controller
 
 #Control Mouse
 #Listening to Mouse
@@ -7,6 +8,12 @@ from pynput.mouse import Controller
 
 def control_mouse():
     mouse = Controller()
-    mouse.position = (100,150)
+    mouse.position = (600,500)
 
 control_mouse()
+
+def control_keyboard():
+    keyboard = Controller()
+    keyboard.type("Lets check this")
+
+control_keyboard()
